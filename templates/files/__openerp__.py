@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 ##############################################################################
 #
-#    Copyright (C) {year} {developer} (<{mail}>)
-#    All Rights Reserved
+#    Copyright (C) {year} {company} All Rights Reserved
+#    ${developer} <{mail}>$
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as published
@@ -20,17 +20,13 @@
 ##############################################################################
 
 {
-    'name': "",
+    'name': '',
     'version': '',
     'category': '',
     'description': """""",
-    'author': '{developer} <{mail}>',
+    'author': '{company}',
     'website': '',
-    'license': 'AGPL-3',
     "depends": [],
-    "init_xml": [],
-    "update_xml": [],
-    "demo_xml": [],
-    "active": False,
+    "data": [],
     "installable": True
 }

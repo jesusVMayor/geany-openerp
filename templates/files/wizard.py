@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 ##############################################################################
 #
-#    Copyright (C) {year} {developer} (<{mail}>)
-#    All Rights Reserved
+#    Copyright (C) {year} {company} All Rights Reserved
+#    ${developer} <{mail}>$
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as published
@@ -18,23 +18,13 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
+from openerp import models, fields, api, exceptions, _
 
+class (models.TransientModel):
 
-from osv import fields, osv
-from tools.translate import _
+    _name = ''
 
+    @api.multi
+    def (self):
 
-class (osv.osv_memory):
-
-    _name = ""
-    _description = ""
-
-    _columns = {
-        
-        }
-
-    def (self, cr, uid, ids, context={}):
-        
         return {'type': 'ir.actions.act_window_close'}
-
-()

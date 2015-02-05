@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 ##############################################################################
 #
-#    Copyright (C) {year} {developer} (<{mail}>)
-#    All Rights Reserved
+#    Copyright (C) {year} {company} All Rights Reserved
+#    ${developer} <{mail}>$
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as published
@@ -18,18 +18,10 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-
-from osv import fields, osv
-from tools.translate import _
+from openerp import models, fields, api, exceptions, _
 
 
-class (osv.osv):
+class ui(models.Model):
 
-    _name = ""
-    _description = ""
-
-    _columns = {
-        
-        }
-
-()
+    _name = ''
+    _inherit = ''

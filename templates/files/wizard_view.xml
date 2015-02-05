@@ -2,50 +2,28 @@
 
 <openerp>
     <data>
-        
-        <!-- ====================================================== -->
-        <!--                         WIZARD                         -->
-        <!-- ====================================================== -->
+
         <record id="" model="ir.ui.view">
             <field name="name"></field>
             <field name="model"></field>
             <field name="type">form</field>
             <field name="arch" type="xml">
                 <form string="">
-                    <field name="name"/>
-                    <group>
-                        <button string="" special="cancel" icon="gtk-cancel" colspan="2"/>
-                        <button string="" name="" type="object" icon="gtk-ok" colspan="2"/>
-                    </group>
+                    <button string="" name="" type="object" icon="gtk-ok"/>
+                    <button string="Cancel" special="cancel" icon="gtk-cancel"/>
                 </form>
             </field>
         </record>
-    
-        <!-- ====================================================== -->
-        <!--                     WIZARD ACTION                      -->
-        <!-- ====================================================== -->
-        <record id="action_" model="ir.actions.act_window">
-            <field name="name"></field>
-            <field name="res_model"></field>
-            <field name="src_model"></field>
-            <field name="view_type">form</field>
-            <field name="view_mode">form</field>
-            <field name="target">new</field>
-            <field name="view_id" ref=""/>
-        </record>
-        
-        <!-- ====================================================== -->
-        <!--                     WIZARD BUTTON                      -->
-        <!-- ====================================================== -->
-        <record model="ir.values" id="act_">
-            <field name="model_id" ref="" />
-            <field name="object" eval="1" />
-            <field name="name"></field>
-            <field name="key2">client_action_multi</field>
-            <field name="value" eval="'ir.actions.act_window,' + str(ref('action_'))" />
-            <field name="key">action</field>
-            <field name="model"></field>
-        </record>
+
+        <act_window name=""
+            res_model="WIZARD_MODEL"
+            src_model="FROM_MODEL"
+            view_id=""
+            view_mode="form"
+            target="new"
+            key2=""
+            id=""/>
 
     </data>
 </openerp>
+
